@@ -1,0 +1,57 @@
+# Venezuela, circa 2000-2010 (Aviación Militar / Ejército).
+# Los nombres de unidad son los atributos de pydcs (dcs.planes, dcs.helicopters, dcs.vehicles.*).
+# "display" es lo que muestra la UI: permite usar un modelo DCS como sustituto (VF-5 -> F-5E-3).
+# real_downtime_ratio: horas de taller por hora de vuelo en la vida real (aprox., ajustable).
+id: venezuela_2005
+name: Venezuela (2005)
+side: blue
+dcs_country: Venezuela
+era: [1995, 2010]
+aircraft:
+  - unit: planes.F_5E_3
+    display: VF-5 (F-5E sustituto)
+    role: [CAS, CAP, Intercept]
+    real_downtime_ratio: 2.0
+    tail_prefix: FAV
+  - unit: planes.F_16A
+    display: F-16A
+    role: [CAP, CAS]
+    real_downtime_ratio: 2.5
+    tail_prefix: FAV
+  - unit: planes.Su_30
+    display: Su-30MK2 (desde 2006, solo IA)
+    role: [CAP, Strike]
+    real_downtime_ratio: 3.0
+    tail_prefix: FAV
+  - unit: planes.C_130
+    display: C-130H Hercules
+    role: [Transport]
+    real_downtime_ratio: 1.5
+    tail_prefix: FAV
+helicopters:
+  - unit: helicopters.Mi_8MT
+    display: Mi-17 (Mi-8MTV2)
+    role: [Transport, CSAR]
+    real_downtime_ratio: 1.5
+    tail_prefix: EV
+  - unit: helicopters.Mi_24V
+    display: Mi-35M (Mi-24V sustituto)
+    role: [CAS]
+    real_downtime_ratio: 2.0
+    tail_prefix: EV
+  - unit: helicopters.UH_1H
+    display: UH-1H
+    role: [Transport]
+    real_downtime_ratio: 1.0
+    tail_prefix: EV
+ground:
+  - unit: vehicles.Unarmed.Hummer
+    display: Vehículo táctico
+  - unit: vehicles.Armor.BTR_80
+    display: Blindado de transporte (sustituto)
+air_defense:
+  - unit: vehicles.AirDefence.SA_18_Igla_S_manpad
+    display: Igla-S (desde 2009)
+notes: >
+  Venezuela operó VF-5 (CF-5/NF-5) y F-16A/B en el período; los Su-30MK2 llegan desde 2006.
+  OV-10 Bronco (usado contra guerrilla) existe solo como mod y se agrega en la fase 2.

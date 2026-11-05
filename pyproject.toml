@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "latam-campaign"
+version = "0.1.0"
+description = "Campaña dinámica en tiempo real para DCS World, centrada en Latinoamérica 1990-2010"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "LGPL-3.0-or-later" }
+dependencies = [
+    "pydcs>=1.0.0",
+    "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+latam = "latam_campaign.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["latam_campaign*"]
+
+[tool.setuptools.package-data]
+latam_campaign = ["data/**/*.yaml", "bridge/lua/*.lua"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::SyntaxWarning"]

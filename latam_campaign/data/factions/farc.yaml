@@ -1,0 +1,27 @@
+# FARC-EP, circa 1995-2010. Grupo insurgente real; equipamiento aproximado.
+id: farc
+name: FARC-EP
+side: red
+dcs_country: Insurgents
+insurgent: true
+era: [1964, 2016]
+ground:
+  - unit: vehicles.Infantry.Infantry_AK_Ins
+    display: Guerrillero (fusil)
+  - unit: vehicles.Infantry.Soldier_RPG
+    display: Guerrillero (RPG)
+  - unit: vehicles.AirDefence.HL_ZU_23
+    display: Técnica con ZU-23
+  - unit: vehicles.Unarmed.Land_Rover_109_S3
+    display: Camioneta
+air_defense:
+  - unit: vehicles.AirDefence.Igla_manpad_INS
+    display: MANPADS (escaso)
+    rarity: 0.15
+camp_templates:
+  campamento:
+    - [vehicles.Infantry.Infantry_AK_Ins, 6]
+    - [vehicles.Infantry.Soldier_RPG, 2]
+    - [vehicles.AirDefence.HL_ZU_23, 1]
+    - [vehicles.Unarmed.Land_Rover_109_S3, 2]
+notes: Operó en la frontera colombo-venezolana (Arauca, Catatumbo).

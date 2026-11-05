@@ -1,0 +1,27 @@
+# Ejército de Liberación Nacional (ELN), circa 1995-2010. Grupo insurgente real; equipamiento aproximado.
+id: eln
+name: ELN
+side: red
+dcs_country: Insurgents
+insurgent: true
+era: [1964, 2026]
+ground:
+  - unit: vehicles.Infantry.Infantry_AK_Ins
+    display: Guerrillero (fusil)
+  - unit: vehicles.Infantry.Soldier_RPG
+    display: Guerrillero (RPG)
+  - unit: vehicles.AirDefence.ZU_23_Insurgent
+    display: ZU-23 emplazada
+  - unit: vehicles.Unarmed.GAZ_66
+    display: Camión
+air_defense:
+  - unit: vehicles.AirDefence.Igla_manpad_INS
+    display: MANPADS (muy escaso)
+    rarity: 0.05
+camp_templates:
+  campamento:
+    - [vehicles.Infantry.Infantry_AK_Ins, 5]
+    - [vehicles.Infantry.Soldier_RPG, 2]
+    - [vehicles.AirDefence.ZU_23_Insurgent, 1]
+    - [vehicles.Unarmed.GAZ_66, 1]
+notes: Fuerte presencia en Arauca, incluida la zona fronteriza con Venezuela.

@@ -1,0 +1,11 @@
+# Cargas por modelo y tarea: estación -> atributo de arma en Pylon<N> de pydcs.
+# Si un modelo/tarea no está acá, se usa la carga por defecto de DCS (requiere DCS instalado).
+planes.F_5E_3:
+  GroundAttack:
+    1: AIM_9P5_Sidewinder_IR_AAM
+    2: LAU3_HE151
+    3: Mk_82_Snakeye___500lb_GP_Bomb_HD
+    4: F_5_150Gal_Fuel_tank
+    5: Mk_82_Snakeye___500lb_GP_Bomb_HD
+    6: LAU3_HE151
+    7: AIM_9P5_Sidewinder_IR_AAM

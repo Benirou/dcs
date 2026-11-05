@@ -1,0 +1,31 @@
+# Teatro sustituto: la frontera colombo-venezolana representada sobre el mapa del Cáucaso.
+# Escenario hipotético ("qué hubiera pasado si"): Venezuela no combatió a FARC/ELN en la realidad.
+# Las posiciones de campamentos son desplazamientos en km (norte, este) desde un aeródromo de DCS.
+id: caucasus_frontera
+name: Frontera colombo-venezolana (sustituto Cáucaso)
+dcs_terrain: Caucasus
+start_date: 2005-06-01T08:00:00
+bases:
+  - id: ba_landaeta
+    name: BA Tte. Vicente Landaeta Gil (sustituto)
+    airport: Senaki-Kolkhi
+    owner: venezuela_2005
+camps:
+  - id: farc_f10
+    name: Campamento FARC – Frente 10 (Arauca)
+    faction: farc
+    template: campamento
+    from_airport: Senaki-Kolkhi
+    offset_km: [35, 10]
+  - id: farc_f33
+    name: Campamento FARC – Frente 33 (Catatumbo)
+    faction: farc
+    template: campamento
+    from_airport: Senaki-Kolkhi
+    offset_km: [28, -5]
+  - id: eln_dl
+    name: Campamento ELN – Frente Domingo Laín (Arauca)
+    faction: eln
+    template: campamento
+    from_airport: Senaki-Kolkhi
+    offset_km: [50, 40]
